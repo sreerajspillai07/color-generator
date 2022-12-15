@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+body {
+    margin: 0;
+    font-family: 'Noto Sans', sans-serif;
+    
+  }
+  
+  
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .color-container {
+    background-color: orange;
+    width: 300px;
+    height: 150px;
+    color: white;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    border-radius: 6px;
+  }
+
+  .main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3.125rem;
+  }
+  #btn{
+    outline: none;
+    padding: .5125rem;
+    border-radius: .625rem;
+    background: rgb(64, 167, 64);
+    color: white;
+    font-size: large;
+    margin-bottom: 10px;
+    border: none;
+    align-items: center;
+
+  }
+  #btn:hover{
+    background: gray;
+    color: white;
+    transform: scale(1.1);
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+  }
+
+  @media(max-width: 768px)  {
+    .main{
+        display: flex;
+        flex-direction: column;
+        gap: .625rem;
+        
+    }
+    h1{
+        font-size: larger;
+    }
+    
+  }
